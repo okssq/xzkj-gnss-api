@@ -1,0 +1,93 @@
+
+.w1000{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.w1200{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my-table{
+  background-color: #fff;
+  border: 1px solid rgb(235 238 245);
+  border-right: none;
+  border-bottom: none;
+  font-size: 14px;
+  position: relative;
+}
+.my-table:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+}
+.my-table:after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+}
+.my-table:after,
+.my-table:before {
+  content: "";
+  position: absolute;
+  background-color: rgb(235 238 245);
+  z-index: 1;
+}
+.my-table td{
+  border-top: 1px solid rgb(235 238 245);
+}
+.my-table td + td,
+.my-table th + th{
+  border-left: 1px solid rgb(235 238 245);
+}
+.my-table td,
+.my-table th {
+  padding: 12px 0;
+  min-width: 0;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+}
+.my-table .cell {
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-all;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.my-table th > .cell {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+.my-table td.is-center,
+.my-table th.is-center {
+  text-align: center;
+}
+.is-leaf {
+  text-align: left;
+  width: 33.3%;
+}
+.is-center {
+  width: 8.3%;
+  text-align: center;
+}
+.tr_level_1 > td:first-child{
+  padding-left: 16px;
+}
+.tr_level_2 > td:first-child{
+  padding-left: 32px;
+}
+
+
